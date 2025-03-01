@@ -1,0 +1,18 @@
+## Interface: 11506
+## Title: Musician Legend of Zelda
+## Author: Anderya-ArgentDawn
+## Version: 0.0.1
+## IconTexture: Interface\Icons\inv_misc_flute_01.blp
+## RequiredDeps: Musician
+## OptionalDeps: MusicianExtended
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## Notes: Legend of Zelda style instrument pack for Musician
+
+core\MusicianLoZ.lua
+
+constants\MusicianLoZ.Constants.lua
+constants\MusicianLoZ.Instruments.lua
+constants\MusicianLoZ.MidiMapping.lua
+
+locale\locale.xml

@@ -2,5 +2,6 @@
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	xmlns="http://www.blizzard.com/wow/ui/">
 	<!-- Base localization -->
+	<Script file="MusicianLoZ.base.lua" />
 	<Script file="MusicianLoZ.en.lua" />
 </Ui>

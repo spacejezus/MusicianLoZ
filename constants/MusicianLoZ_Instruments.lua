@@ -1,3 +1,5 @@
+-- Adding the Legend of Zelda instruments.
+
 if Musician.INSTRUMENTS["ocarina"] == nil then
         Musician.INSTRUMENTS["ocarina"] = {
 	            path = "Interface\\AddOns\\MusicianLoZ\\instruments\\ocarina",      -- Path to your instrument folder
@@ -12,6 +14,6 @@ if Musician.INSTRUMENTS["ocarina"] == nil then
 
         -- Insert the ocarina after Recorder
         local i = 1
-        while Musician.INSTRUMENTS_AVAILABLE[i] ~= "recorder" and i <= #Musician.INSTRUMENTS_AVAILABLE do i = i + 1 end
-        table.insert(Musician.INSTRUMENTS_AVAILABLE, i, "ocarina")
+       while Musician.INSTRUMENTS_AVAILABLE[i] ~= "lute" and i <= #Musician.INSTRUMENTS_AVAILABLE do i = i + 1 end
+        table.insert(Musician.INSTRUMENTS_AVAILABLE, i + 1, "ocarina")
     end

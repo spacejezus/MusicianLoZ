@@ -1,5 +1,5 @@
 if Musician.INSTRUMENTS["ocarina"] == nil then
-        Musician.INSTRUMENTS["flute"] = {
+        Musician.INSTRUMENTS["ocarina"] = {
 	            path = "Interface\\AddOns\\MusicianLoZ\\instruments\\ocarina",      -- Path to your instrument folder
 	            decay = 150,                                                        -- Decay duration in milliseconds
 	            isPercussion = false,                                               -- Act as a percussion instrument using the single sample file (without extension) from path or picked from pathList using keyMod or roundRobin methods

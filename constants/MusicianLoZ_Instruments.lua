@@ -13,5 +13,5 @@ if Musician.INSTRUMENTS["ocarina"] == nil then
         -- Insert the ocarina after Dizi
         local i = 1
         while Musician.INSTRUMENTS_AVAILABLE[i] ~= "dizi" and i <= #Musician.INSTRUMENTS_AVAILABLE do i = i + 1 end
-        table.insert(Musician.INSTRUMENTS_AVAILABLE, i + 1, "ocarina")
+        table.insert(Musician.INSTRUMENTS_AVAILABLE, i, "ocarina")
     end

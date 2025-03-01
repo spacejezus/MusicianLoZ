@@ -12,7 +12,7 @@ if Musician.INSTRUMENTS["ocarina"] == nil then
 	            source = "Xadra's LoZ Soundfont"                                    -- Credits to author, software, library etc used to create the instrument. Displayed in the "About" window.
         }
 
-        -- Insert the ocarina after Recorder
+        -- Insert the ocarina after lute
         local i = 1
        while Musician.INSTRUMENTS_AVAILABLE[i] ~= "lute" and i <= #Musician.INSTRUMENTS_AVAILABLE do i = i + 1 end
         table.insert(Musician.INSTRUMENTS_AVAILABLE, i + 1, "ocarina")

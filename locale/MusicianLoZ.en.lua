@@ -1,3 +1,12 @@
 local msg = Musician.Locale.en
 msg.INSTRUMENT_NAMES["ocarina"] = "Ocarina (LoZ)"
 msg.INSTRUMENT_NAMES["glockenspiel"] = "Glockenspiel (LoZ)"
+msg.INSTRUMENT_NAMES["banjo"] = "Banjo (LoZ)"
+msg.INSTRUMENT_NAMES["sheikharp"] = "Sheik's Harp (LoZ)"
+msg.INSTRUMENT_NAMES["choirmale"] = "Choir Male (LoZ)"
+msg.INSTRUMENT_NAMES["choirfemale"] = "Choir Female (LoZ)"
+msg.INSTRUMENT_NAMES["ganonorgan"] = "Ganon's Organ (LoZ)"
+msg.INSTRUMENT_NAMES["harpsichord"] = "Harpsichord (LoZ)"
+msg.INSTRUMENT_NAMES["varimba"] = "Marimba (LoZ)"
+msg.INSTRUMENT_NAMES["piccolo"] = "Piccolo (LoZ)"
+msg.INSTRUMENT_NAMES["pizzicatostrings"] = "Pizzicato Strings (LoZ)"

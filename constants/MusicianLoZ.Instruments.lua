@@ -7,7 +7,7 @@
 	            decay = 150,                                                        		-- Decay duration in milliseconds
 	            isPercussion = false,                                               		-- Act as a percussion instrument using the single sample file (without extension) from path or picked from pathList using keyMod or roundRobin methods
 	            isPlucked = false,                                                  		-- Set to true for plucked instruments such as guitar, harp etc.
-	            midi = 79,  --ocarina                                               		-- General MIDI instrument ID (0-127). For percussions, midi is its MIDI ID + 128
+	            midi = 79,  --Ocarina                                               		-- General MIDI instrument ID (0-127). For percussions, midi is its MIDI ID + 128
 	            loop = { 4, 5 },                                                    		-- Only needed for continuous instruments. The sample will be looped randomly after 4 and 5 seconds
 				crossfade = 150,															-- Crossfade in milliseconds
 	            color = { 0.00, 1.00, 0.59 },                                       		-- r, g, b
@@ -27,7 +27,7 @@
 	            decay = 1000,                                                        		-- Decay duration in milliseconds
 	            isPercussion = false,                                               		-- Act as a percussion instrument using the single sample file (without extension) from path or picked from pathList using keyMod or roundRobin methods
 	            isPlucked = true,                                                  			-- Set to true for plucked instruments such as guitar, harp etc.
-	            midi = 9,  --glockenspiel                                               	-- General MIDI instrument ID (0-127). For percussions, midi is its MIDI ID + 128
+	            midi = 9,  --Glockenspiel                                               	-- General MIDI instrument ID (0-127). For percussions, midi is its MIDI ID + 128
 	            color = { 0.78 / 1.25, 0.61 / 1.25, 0.43 / 1.25 },                          -- r, g, b
 	            source = "Xadra's LoZ Soundfont"                                    		-- Credits to author, software, library etc used to create the instrument. Displayed in the "About" window.
         }
@@ -42,10 +42,10 @@
 	if Musician.INSTRUMENTS["banjo"] == nil then
 		Musician.INSTRUMENTS["banjo"] = {
 				path = "Interface\\AddOns\\MusicianLoZ\\instruments\\banjo",		      	-- Path to your instrument folder
-				decay = 200,                                                        		-- Decay duration in milliseconds
+				decay = 500,                                                        		-- Decay duration in milliseconds
 				isPercussion = false,                                               		-- Act as a percussion instrument using the single sample file (without extension) from path or picked from pathList using keyMod or roundRobin methods
 				isPlucked = true,                                                  			-- Set to true for plucked instruments such as guitar, harp etc.
-				midi = 105,  --banjo		                                               	-- General MIDI instrument ID (0-127). For percussions, midi is its MIDI ID + 128
+				midi = 105,  --Banjo		                                               	-- General MIDI instrument ID (0-127). For percussions, midi is its MIDI ID + 128
 				color = { 1.00, 0.49 * 1.5, 0.04 * 1.5 },                                   -- r, g, b
 				source = "Xadra's LoZ Soundfont"                                    		-- Credits to author, software, library etc used to create the instrument. Displayed in the "About" window.
 		}
@@ -205,4 +205,104 @@
 		local i = 1
    	   while Musician.INSTRUMENTS_AVAILABLE[i] ~= "fiddle" and i <= #Musician.INSTRUMENTS_AVAILABLE do i = i + 1 end
 		table.insert(Musician.INSTRUMENTS_AVAILABLE, i, "pizzicatostrings")
+	end
+
+-- Ensemble Strings
+	if Musician.INSTRUMENTS["strings"] == nil then
+		Musician.INSTRUMENTS["strings"] = {
+				path = "Interface\\AddOns\\MusicianLoZ\\instruments\\strings",				-- Path to your instrument folder
+				decay = 150,                                                        		-- Decay duration in milliseconds
+				isPercussion = false,                                               		-- Act as a percussion instrument using the single sample file (without extension) from path or picked from pathList using keyMod or roundRobin methods
+				isPlucked = false,                                                  		-- Set to true for plucked instruments such as guitar, harp etc.
+				midi = 48,  --String Ensemble 1				                                -- General MIDI instrument ID (0-127). For percussions, midi is its MIDI ID + 128
+				loop = { 5, 5 },															-- Only needed for continuous instruments. The sample will be looped randomly after 5 seconds
+				crossfade = 100,															-- Crossfade in milliseconds
+				color = { 1.00, 0.49, 0.04 },			                            		-- r, g, b
+				source = "Xadra's LoZ Soundfont"                                    		-- Credits to author, software, library etc used to create the instrument. Displayed in the "About" window.
+		}
+
+		-- Insert the strings before fiddle
+		local i = 1
+   	   while Musician.INSTRUMENTS_AVAILABLE[i] ~= "fiddle" and i <= #Musician.INSTRUMENTS_AVAILABLE do i = i + 1 end
+		table.insert(Musician.INSTRUMENTS_AVAILABLE, i - 1, "strings")
+	end
+
+-- Bassoon
+	if Musician.INSTRUMENTS["sassoon"] == nil then
+		Musician.INSTRUMENTS["sassoon"] = {
+				path = "Interface\\AddOns\\MusicianLoZ\\instruments\\sassoon",		    	-- Path to your instrument folder
+				decay = 75,                                                        			-- Decay duration in milliseconds
+				isPercussion = false,                                               		-- Act as a percussion instrument using the single sample file (without extension) from path or picked from pathList using keyMod or roundRobin methods
+				isPlucked = false,                                                  		-- Set to true for plucked instruments such as guitar, harp etc.
+				midi = 67,  --Baritone Sax				                                    -- General MIDI instrument ID (0-127). For percussions, midi is its MIDI ID + 128
+				loop = { 4, 5 },															-- Only needed for continuous instruments. The sample will be looped randomly after 4 and 5 seconds
+				crossfade = 150,															-- Crossfade in milliseconds
+				color = { 0.67 / 1.5, 0.83 / 1.5, 0.45 / 1.5 },			                    -- r, g, b
+				source = "Xadra's LoZ Soundfont"                                    		-- Credits to author, software, library etc used to create the instrument. Displayed in the "About" window.
+		}
+
+		-- Insert the sassoon before bassoon
+		local i = 1
+   	   while Musician.INSTRUMENTS_AVAILABLE[i] ~= "bassoon" and i <= #Musician.INSTRUMENTS_AVAILABLE do i = i + 1 end
+		table.insert(Musician.INSTRUMENTS_AVAILABLE, i, "sassoon")
+	end
+
+-- French Horn
+	if Musician.INSTRUMENTS["frenchhorn"] == nil then
+		Musician.INSTRUMENTS["frenchhorn"] = {
+				path = "Interface\\AddOns\\MusicianLoZ\\instruments\\frenchhorn",		    -- Path to your instrument folder
+				decay = 150,                                                        		-- Decay duration in milliseconds
+				isPercussion = false,                                               		-- Act as a percussion instrument using the single sample file (without extension) from path or picked from pathList using keyMod or roundRobin methods
+				isPlucked = false,                                                  		-- Set to true for plucked instruments such as guitar, harp etc.
+				midi = 62,  --Synth Brass 1			                                    	-- General MIDI instrument ID (0-127). For percussions, midi is its MIDI ID + 128
+				loop = { 4, 5 },															-- Only needed for continuous instruments. The sample will be looped randomly after 4 and 5 seconds
+				crossfade = 150,															-- Crossfade in milliseconds
+				color = { 1.00 / 1.5, 0.96 / 3, 0.41 / 3 },			                    	-- r, g, b
+				source = "Xadra's LoZ Soundfont"                                    		-- Credits to author, software, library etc used to create the instrument. Displayed in the "About" window.
+		}
+
+		-- Insert the frenchhorn before war_horn
+		local i = 1
+   	   while Musician.INSTRUMENTS_AVAILABLE[i] ~= "war_horn" and i <= #Musician.INSTRUMENTS_AVAILABLE do i = i + 1 end
+		table.insert(Musician.INSTRUMENTS_AVAILABLE, i, "frenchhorn")
+	end
+
+-- Accordion
+	if Musician.INSTRUMENTS["taccordion"] == nil then
+		Musician.INSTRUMENTS["taccordion"] = {
+				path = "Interface\\AddOns\\MusicianLoZ\\instruments\\taccordion",		    -- Path to your instrument folder
+				decay = 100,                                                        		-- Decay duration in milliseconds
+				isPercussion = false,                                               		-- Act as a percussion instrument using the single sample file (without extension) from path or picked from pathList using keyMod or roundRobin methods
+				isPlucked = false,                                                  		-- Set to true for plucked instruments such as guitar, harp etc.
+				midi = 23,  --Tango Accordion			                                    -- General MIDI instrument ID (0-127). For percussions, midi is its MIDI ID + 128
+				loop = { 5, 5 },															-- Only needed for continuous instruments. The sample will be looped randomly after 5 seconds
+				crossfade = 100,															-- Crossfade in milliseconds
+				color = { 0.00, 1.00 / 1.5, 0.59 / 1.5 },			                    					-- r, g, b
+				source = "Xadra's LoZ Soundfont"                                    		-- Credits to author, software, library etc used to create the instrument. Displayed in the "About" window.
+		}
+
+		-- Insert the taccordion before accordion
+		local i = 1
+   	   while Musician.INSTRUMENTS_AVAILABLE[i] ~= "accordion" and i <= #Musician.INSTRUMENTS_AVAILABLE do i = i + 1 end
+		table.insert(Musician.INSTRUMENTS_AVAILABLE, i, "taccordion")
+	end
+
+-- Pan Flute (Flute Pad)
+	if Musician.INSTRUMENTS["panflute"] == nil then
+		Musician.INSTRUMENTS["panflute"] = {
+				path = "Interface\\AddOns\\MusicianLoZ\\instruments\\panflute",		    	-- Path to your instrument folder
+				decay = 250,                                                        		-- Decay duration in milliseconds
+	            isPercussion = false,                                               		-- Act as a percussion instrument using the single sample file (without extension) from path or picked from pathList using keyMod or roundRobin methods
+	            isPlucked = false,                                                  		-- Set to true for plucked instruments such as guitar, harp etc.
+	            midi = 75,  --Pan Flute                                               		-- General MIDI instrument ID (0-127). For percussions, midi is its MIDI ID + 128
+	            loop = { 4, 5 },                                                    		-- Only needed for continuous instruments. The sample will be looped randomly after 4 and 5 seconds
+				crossfade = 150,															-- Crossfade in milliseconds
+	            color = { 0.00, 1.00, 0.59 },                                       		-- r, g, b
+	            source = "Xadra's LoZ Soundfont"                                    		-- Credits to author, software, library etc used to create the instrument. Displayed in the "About" window.
+        }
+
+		-- Insert the panflute before recorder
+		local i = 1
+   	   while Musician.INSTRUMENTS_AVAILABLE[i] ~= "recorder" and i <= #Musician.INSTRUMENTS_AVAILABLE do i = i + 1 end
+		table.insert(Musician.INSTRUMENTS_AVAILABLE, i, "panflute")
 	end

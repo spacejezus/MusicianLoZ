@@ -295,8 +295,8 @@
 	            isPercussion = false,                                               		-- Act as a percussion instrument using the single sample file (without extension) from path or picked from pathList using keyMod or roundRobin methods
 	            isPlucked = false,                                                  		-- Set to true for plucked instruments such as guitar, harp etc.
 	            midi = 75,  --Pan Flute                                               		-- General MIDI instrument ID (0-127). For percussions, midi is its MIDI ID + 128
-	            loop = { 4, 5 },                                                    		-- Only needed for continuous instruments. The sample will be looped randomly after 4 and 5 seconds
-				crossfade = 150,															-- Crossfade in milliseconds
+	            loop = { 3, 4 },                                                    		-- Only needed for continuous instruments. The sample will be looped randomly after 3 and 4  seconds
+				crossfade = 250,															-- Crossfade in milliseconds
 	            color = { 0.00, 1.00, 0.59 },                                       		-- r, g, b
 	            source = "Xadra's LoZ Soundfont"                                    		-- Credits to author, software, library etc used to create the instrument. Displayed in the "About" window.
         }

@@ -31,3 +31,12 @@ Compatible with: Retail, Vanilla/Hardcore, Musician:Extended, MusicianFX 1.0.0
 If you find Anderya-ArgentDawnEU, feel free to ask for a demo song link, it will mostly use the new instruments.
 
 Loadtimes may increase due to the amount of instruments added. It's suggested to install on ssd to keep loadtimes to a minimum.
+
+
+# Changelog:
+29/10/2025 - Version 1.0.1
+- Updated TOC
+- Added changelog to readme
+
+03/05/2025 - Version 1.0.0
+- Initial release

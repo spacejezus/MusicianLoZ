@@ -34,6 +34,9 @@ Loadtimes may increase due to the amount of instruments added. It's suggested to
 
 
 # Changelog:
+16/01/2026 - Version 1.0.2
+- Updated TOC for Midnight release
+
 29/10/2025 - Version 1.0.1
 - Updated TOC
 - Added changelog to readme

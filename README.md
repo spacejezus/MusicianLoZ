@@ -34,6 +34,9 @@ Loadtimes may increase due to the amount of instruments added. It's suggested to
 
 
 # Changelog:
+21/01/2026 - Version 1.0.3
+- Updated TOC to make addon compatible again
+
 16/01/2026 - Version 1.0.2
 - Updated TOC for Midnight release
 
